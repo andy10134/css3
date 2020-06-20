@@ -70,7 +70,8 @@ body{
 
 .textoform{
 	text-align: center;
-	font-size: 50px; 
+  font-size: 50px; 
+  margin-top: 80px;
 	margin-bottom: 20px;
 }
 
@@ -264,12 +265,12 @@ a:hover{
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
-  color: #1A59A0;
+  color: #ffffff;
   background-color: transparent;
   text-align: center;
-  border: 1px solid #1A59A0;
+  border: 1px solid #ffffff;
   cursor: pointer;
-  left: 46%;
+  left: 42%;
   text-decoration: none;
 }
 
@@ -321,4 +322,31 @@ a:hover{
   left: 37%;
 }
 
----------------------------------
+.pagformulario{
+	background-color: #2F2F2F;
+	overflow-x:hidden;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+}
+
+.divform{
+  padding-top: 150px;
+  height: 700px;
+  width: 1200px;
+}
+
+form{
+  margin: 20px;
+}
+
+.columnaform{
+  height: 700px;
+  background-color: #09468C;
+}
+
+.columnafoto{
+  height: 700px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/lightbulb-1875247_1920.jpg");
+  background-size: cover;
+  background-position: center;
+}
