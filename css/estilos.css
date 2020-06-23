@@ -56,7 +56,8 @@ html{
 }
 
 body{
-	background-color: #f8f8f8;
+  background-color: #f8f8f8;
+  transition: all 1s;
 	overflow-x:hidden;
 	font-family: 'Raleway', sans-serif;
 }
@@ -159,7 +160,6 @@ border: none;
     transition: 0.5s;
     border: 1px solid #0056b3;
 }
-}
 
 .buttoncards{
 border: none;
@@ -233,8 +233,6 @@ a:hover{
     color: white;
     transition: 0.5s;
     border: 1px solid #0056b3;
-
-}
 
 }
 
@@ -321,17 +319,6 @@ a:hover{
   left: 37%;
 }
 
-.pagformulario{
-	background-color: background: rgb(255,255,255);
-	background: background: rgb(255,255,255);
-	background: linear-gradient(90deg, rgba(0, 0, 0,0.3) 52.5%, rgba(0, 0, 0,0.3) 5%), url("../img/fondo.jpg");
-	overflow-x:hidden;
-  font-family: 'Raleway', sans-serif;
-  color: #ffffff;
-	background-attachment: fixed;
-	background-size: cover;
-}
-
 .divform{
   padding-top: 150px;
   height: 1000px;
@@ -349,8 +336,6 @@ form{
 }
 
 .pagformulario {
-	background-color: background: rgb(255,255,255);
-	background: background: rgb(255,255,255);
 	background: linear-gradient(90deg, rgba(0, 0, 0,0.3) 52.5%, rgba(0, 0, 0,0.3) 5%), url("../img/fondo.jpg");
 	overflow-x:hidden;
   font-family: 'Raleway', sans-serif;
