@@ -33,7 +33,6 @@ html{
 
 }
 
-
 .carousel-item{
 	height: calc(100vh - 63px); /*calculo de la totalidad de la pantalla menos el nav*/
 	text-shadow: 2px 2px #000000;
@@ -56,8 +55,7 @@ html{
 }
 
 body{
-  background-color: #f8f8f8;
-  transition: all 1s;
+	background-color: #f8f8f8;
 	overflow-x:hidden;
 	font-family: 'Raleway', sans-serif;
 }
@@ -89,6 +87,7 @@ border: none;
     color: white;
     transition: 0.5s;
     border: 1px solid #0056b3;
+}
 }
 
 .buttoncards{
@@ -166,6 +165,8 @@ a:hover{
 
 }
 
+}
+
 .buttonform button{
 	border: none;
   outline: 0;
@@ -217,5 +218,3 @@ a:hover{
   margin-top: 20px;
   text-decoration: none;
 }
-
-
