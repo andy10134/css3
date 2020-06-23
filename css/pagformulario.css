@@ -1,0 +1,76 @@
+body{
+	background-color: background: rgb(255,255,255);
+	background: background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(0, 0, 0,0.3) 52.5%, rgba(0, 0, 0,0.3) 5%), url("../img/fondo.jpg");
+	overflow-x:hidden;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+nav{
+	width: 100%;
+	padding:0;;
+	color: white;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 1s all;
+
+}
+
+.scrolled{
+  background-color: #1A59A0;
+  transition: 0.5s all;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.divform{
+  padding-top: 150px;
+  height: 1000px;
+  width: 1200px;
+  margin-left: 1px;
+}
+
+form{
+  margin: 20px;
+}
+
+.textoform{
+	text-align: center;
+  font-size: 50px; 
+  margin-top: 80px;
+	margin-bottom: 20px;
+}
+
+.columnaform{
+  height: 700px;
+  background-color: #09468C;
+}
+
+.boton-re-loco{
+	border: none;
+  position: absolute;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: #ffffff;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  /*! left: 42%; */
+  text-decoration: none;
+}
+
+.footer{
+	background-color: #1A59A0;
+	width: 100%;
+	color: white;
+}
