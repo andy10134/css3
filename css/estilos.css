@@ -69,13 +69,6 @@ body{
 	margin-top: 50px;
 }
 
-.textoform{
-	text-align: center;
-  font-size: 50px; 
-  margin-top: 80px;
-	margin-bottom: 20px;
-}
-
 .led{
 	height: 100%;
 	width: 100%;
@@ -319,27 +312,3 @@ a:hover{
   left: 37%;
 }
 
-.divform{
-  padding-top: 150px;
-  height: 1000px;
-  width: 1200px;
-  margin-left: 1px;
-}
-
-form{
-  margin: 20px;
-}
-
-.columnaform{
-  height: 700px;
-  background-color: #09468C;
-}
-
-.pagformulario {
-	background: linear-gradient(90deg, rgba(0, 0, 0,0.3) 52.5%, rgba(0, 0, 0,0.3) 5%), url("../img/fondo.jpg");
-	overflow-x:hidden;
-  font-family: 'Raleway', sans-serif;
-  color: #ffffff;
-	background-attachment: fixed;
-	background-size: cover;
-}
