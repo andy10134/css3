@@ -150,9 +150,8 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script>
-
-
-$(document).ready(function() {
+      
+  $(document).ready(function() {
     $(window).scroll(function() {
         if($(this).scrollTop() > 100) { 
             $('.navbar').addClass('scrolled');
@@ -160,7 +159,23 @@ $(document).ready(function() {
             $('.navbar').removeClass('scrolled');
         }
         });
-    });
+
+    $(".instalar").hover(function () {
+        $(".instalar .texto").hide();
+      }, function () {
+        $(".instalar .texto").show(); 
+      }
+    );
+    
+
+    $(".led").hover(function () {
+        $(".led .texto").hide();
+      }, function () {
+        $(".led .texto").show(); 
+      }
+    );
+  });
+
 
 
   </script>
