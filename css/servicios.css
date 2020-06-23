@@ -1,0 +1,112 @@
+nav{
+	width: 100%;
+	padding:0;;
+	color: white;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 1s all;
+
+}
+
+.scrolled{
+  background-color: #1A59A0;
+  transition: 0.5s all;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+	background-color: #f8f8f8;
+	overflow-x:hidden;
+	font-family: 'Raleway', sans-serif;
+}
+
+.led{
+	height: 100%;
+	width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/led.jpg");
+  background-size: cover;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000000;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.overlay:hover  {
+  opacity: 0.85;
+}
+
+.texto{
+  font-family: 'Raleway', sans-serif;
+  color: white ;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+	font-family: 'Raleway', sans-serif;
+  color: white ;
+  font-size: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.instalar{
+	height: 100%;
+	width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/instalar.jpg");
+  background-size: cover;
+}
+
+.boton-loco{
+
+    border: none;
+    outline: 0;
+    position: absolute;
+    top: 83%;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    left: 37%;
+  }
+
+.footer{
+	background-color: #1A59A0;
+	width: 100%;
+	color: white;
+}
