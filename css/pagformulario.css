@@ -1,5 +1,5 @@
 body{
-	background:linear-gradient(90deg, rgba(0, 0, 0,0.8) 52.5%, rgba(0, 0, 0,0.8) 5%), url("../img/fondo.jpg");
+	background:linear-gradient(90deg, rgba(0, 0, 0,0.6) 52.5%, rgba(0, 0, 0,0.6) 5%), url("../img/fondo.jpg");
 	overflow-x:hidden;
   font-family: 'Raleway', sans-serif;
   color: #ffffff;
@@ -107,7 +107,6 @@ input{
 }
 
 .footer{
-  margin-top: 45px;
 	background-color: #1A59A0;
 	width: 100%;
 	color: white;
