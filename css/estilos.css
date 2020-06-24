@@ -38,54 +38,19 @@ html{
 	text-shadow: 2px 2px #000000;
 }
 
-/*.divcards{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../img/light-bulb-1246043_1920.jpg");
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center;
+.row{
+  margin: 0px;
 }
-
-.card-deck{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.card{
-  padding: 0px;
-}
-
-.imgcard{
-  height: 233.3px;
-	display: flex;
-	justify-content: center;
-}
-
-.card-title{
-	text-align: center;
-	margin-top: 5px;
-}
-.card-body{
-	text-align: center;
-	background-color: #f8f8f8;
-}
-*/
 
 .cards{
   height: 100%;
   width: 100%;
+  background-color: #2b2b2bdb;
 }
 
 .cardsolido{
   height: 30%;
   width: 100%;
-  background-color: black;
 }
 .cardfondoimg{
   height: 30%;
@@ -99,7 +64,7 @@ html{
 
 .titulocards{
   font-size: 55px;
-  margin-top: 20px;
+  padding-top: 20px;
   width: 100%;
   text-align: center;
 }
@@ -109,6 +74,7 @@ html{
   margin-bottom: 25px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .columna{
@@ -117,6 +83,7 @@ html{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .card-title{
@@ -152,43 +119,6 @@ body{
 	margin: 0;
 	margin-top: 50px;
 }
-/*}
-.buttongallery{
-border: none;
-  outline: 0;
-  position: absolute;
-  top: 65%;
-  display: inline-block;
-  padding: 10px 25px;
-  color: white;
-  background-color: transparent;
-  text-align: center;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.buttongallery:hover {
-	background-color: #0056b3;
-    text-decoration: none;
-    color: white;
-    transition: 0.5s;
-    border: 1px solid #0056b3;
-}
-
-
-.buttoncards{
-border: none;
-  outline: 0;
-  position: absolute;
-  top: 65%;
-  display: inline-block;
-  padding: 10px 25px;
-  color: #0056b3;
-  background-color: transparent;
-  text-align: center;
-  border: 1px solid #0056b3;
-  cursor: pointer;
-} */
 
 .botoncards:hover {
 	background-color: #0056b3;
