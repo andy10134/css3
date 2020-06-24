@@ -76,30 +76,32 @@ input{
   padding-left: 25px;
 }
 
-.boton-re-loco{
-  width: 89%;
-  transition: all 0.5s;
-  margin-top: 15px;
-	border: none;
-  position: absolute;
+.boton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.botoncards{
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
-  color: #ffffff;
+  color: #f8f8f8;
   background-color: transparent;
   text-align: center;
-  border: 1px solid #ffffff;
+  border: 1px solid #f8f8f8;
   cursor: pointer;
   text-decoration: none;
-  background-color: #fff;
-  color: #09468c;
-  border-radius: 0;
 }
 
-.boton-re-loco:hover{
-  background-color: #1A59A0;
-  border: #1A59A0;
-  color: white;
+.botoncards:hover {
+	background-color: #0056b3;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    border: 1px solid #0056b3;
+	/*! border-radius: 0px; */
 }
 
 .footer{
@@ -108,3 +110,4 @@ input{
 	width: 100%;
 	color: white;
 }
+
