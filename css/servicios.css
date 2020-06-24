@@ -29,7 +29,7 @@ body{
 .led{
 	height: 100%;
 	width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/led.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/fondo.jpg");
   background-size: cover;
 }
 
@@ -102,6 +102,14 @@ body{
     text-align: center;
     border: 1px solid #ffffff;
     cursor: pointer;
+  }
+
+  .boton-loco:hover{
+    background-color: #0056b3;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    border: 1px solid #0056b3;
   }
 
 .footer{
