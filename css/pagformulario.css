@@ -1,6 +1,4 @@
 body{
-	background-color: background: rgb(255,255,255);
-	background: background: rgb(255,255,255);
 	background: linear-gradient(90deg, rgba(0, 0, 0,0.3) 52.5%, rgba(0, 0, 0,0.3) 5%), url("../img/fondo.jpg");
 	overflow-x:hidden;
   font-family: 'Raleway', sans-serif;
@@ -22,7 +20,7 @@ nav{
 }
 
 .scrolled{
-  background-color: #1A59A0;
+  background-color: #1a58a0c5;
   transition: 0.5s all;
 
 }
@@ -32,29 +30,56 @@ html{
 }
 
 .divform{
-  padding-top: 150px;
-  height: 1000px;
-  width: 1200px;
-  margin-left: 1px;
+  margin-top: 150px;
+  height: calc(100vh);
 }
 
 form{
   margin: 20px;
 }
 
+input{
+  border-radius: 0 !important;
+}
+
 .textoform{
 	text-align: center;
   font-size: 50px; 
   margin-top: 80px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .columnaform{
+  position: relative;
   height: 700px;
-  background-color: #09468C;
+  background-color: #2b2b2bdb;
+}
+
+.overlay{
+  transition: all 0.5s;
+  opacity: 1  ;
+  position: absolute;
+  bottom: 0;
+  padding-top: 20px;
+  width: 100%;
+  font-size: 30px;
+  background: linear-gradient(0deg,#012f64c4 0%,#012f64c7 10%); 
+}
+
+.overlay:hover{
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.text{
+  padding-bottom: 30px;
+  padding-left: 25px;
 }
 
 .boton-re-loco{
+  width: 89%;
+  transition: all 0.5s;
+  margin-top: 15px;
 	border: none;
   position: absolute;
   outline: 0;
@@ -65,8 +90,16 @@ form{
   text-align: center;
   border: 1px solid #ffffff;
   cursor: pointer;
-  /*! left: 42%; */
   text-decoration: none;
+  background-color: #fff;
+  color: #09468c;
+  border-radius: 0;
+}
+
+.boton-re-loco:hover{
+  background-color: #1A59A0;
+  border: #1A59A0;
+  color: white;
 }
 
 .footer{
