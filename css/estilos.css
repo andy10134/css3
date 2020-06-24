@@ -38,7 +38,7 @@ html{
 	text-shadow: 2px 2px #000000;
 }
 
-.divcards{
+/*.divcards{
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../img/light-bulb-1246043_1920.jpg");
   background-attachment: fixed;
   height: 100vh;
@@ -75,9 +75,73 @@ html{
 	text-align: center;
 	background-color: #f8f8f8;
 }
+*/
+
+.cards{
+  height: 100%;
+  width: 100%;
+}
+
+.cardsolido{
+  height: 30%;
+  width: 100%;
+  background-color: black;
+}
+.cardfondoimg{
+  height: 30%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../img/light-bulb-1246043_1920.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titulocards{
+  font-size: 55px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.img{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.columna{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-title{
+	text-align: center;
+  margin-top: 5px;
+  color: #f8f8f8;
+}
+
+.card-text{
+  text-align: center;
+  margin-top: 5px;
+  color: #f8f8f8;
+}
+
+.card-body{
+	text-align: center;
+	color: #f8f8f8;
+}
+
+.imgcard{
+  height: 233.3px;
+}
 
 body{
-	background-color: #f8f8f8;
+	background-color: black;
 	overflow-x:hidden;
 	font-family: 'Raleway', sans-serif;
 }
@@ -88,7 +152,7 @@ body{
 	margin: 0;
 	margin-top: 50px;
 }
-
+/*}
 .buttongallery{
 border: none;
   outline: 0;
@@ -110,7 +174,7 @@ border: none;
     transition: 0.5s;
     border: 1px solid #0056b3;
 }
-}
+
 
 .buttoncards{
 border: none;
@@ -124,9 +188,9 @@ border: none;
   text-align: center;
   border: 1px solid #0056b3;
   cursor: pointer;
-}
+} */
 
-.buttoncards:hover {
+.botoncards:hover {
 	background-color: #0056b3;
     text-decoration: none;
     color: white;
@@ -136,7 +200,8 @@ border: none;
 }
 
 h1{
-	/*! margin-bottom: 35px; */
+  /*! margin-bottom: 35px; */
+  color: white;
 }
 
 h4{
@@ -187,22 +252,6 @@ a:hover{
 
 }
 
-}
-
-.buttonform button{
-	border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: #1A59A0;
-  background-color: transparent;
-  text-align: center;
-  border: 1px solid #1A59A0;
-  cursor: pointer;
-  left: 47%;
-  text-decoration: none;
-}
-
 .footer{
 	background-color: #1A59A0;
 	width: 100%;
@@ -231,10 +280,10 @@ a:hover{
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
-  color: #1A59A0;
+  color: #f8f8f8;
   background-color: transparent;
   text-align: center;
-  border: 1px solid #1A59A0;
+  border: 1px solid #f8f8f8;
   cursor: pointer;
   text-decoration: none;
 }
