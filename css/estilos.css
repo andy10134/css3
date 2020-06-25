@@ -70,16 +70,12 @@ html{
 }
 
 .img{
-  margin-top: 25px;
-  margin-bottom: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .columna{
-  margin-top: 25px;
-  margin-bottom: 25px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -108,7 +104,7 @@ html{
 }
 
 body{
-	background-color: black;
+	background-color: #2a2a2a;
 	overflow-x:hidden;
 	font-family: 'Raleway', sans-serif;
 }
@@ -187,7 +183,7 @@ a:hover{
 .footer{
 	background-color: #1A59A0;
 	width: 100%;
-	color: white;
+  color: white;
 }
 
 .boton{
