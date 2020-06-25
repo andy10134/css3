@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <title>EcoElect-Home</title>
+  <meta charset="UTF-8">
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -11,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css">
   <link rel="stylesheet" href="css/slider.css">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -21,21 +23,19 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <a class="navbar-brand" href="#" style="font-size: 27px;">
-    <img src="img/logo.png" width="60px">
-    EcoElect</a>
+      <img src="img/logo.png" width="60px">
+      EcoElect</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse items" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
+      <ul class="navbar-nav ml-auto" id="Menu">
+        <li data-menuanchor="inicio" class="nav-item active" ><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item" data-menuanchor="cards">
           <a class="nav-link" href="#cards">Cards</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-menuanchor="mapa">
           <a class="nav-link" href="#mapa">Ubicación</a>
         </li>
         <li class="nav-item">
@@ -47,8 +47,8 @@
       </ul>
     </div>
   </nav>
-
-  <div class="container-fluid" style="padding: 0 " id="home">
+  <div id="pagepiling"></div>
+  <div class="container-fluid section" style="padding: 0 " id="home">
     <div class="hero-image">
       <div class="hero-text">
         <img src="img/ezgif.com-crop.gif" height="100" style="margin-left: -15px;" alt="">
@@ -58,146 +58,180 @@
     </div>
   </div>
 
-  <div class="container-fluid " style="height: 120vh; padding: 0px;" id="cards">
+  <div class="container-fluid section" style="height: 120vh; padding: 0px;">
     <div class="cards">
-      <h1 class="titulocards">¿Por qué te haremos más eficiente?</h1>
       <div class="row cardsolido">
         <div class="col-lg-4 img">
           <i class="fas fa-wifi" style="font-size: 250px; color: white;"></i>
         </div>
         <div class="col-lg-8 columna">
-          <h1 class="card-title"> <i class="fas fa-street-view"></i>  Desde donde sea</h5>
-          <p class="card-text">A traves de la aplicación de EcoElect podrás controlar las luces desde cualquier lugar.</p>
-          <a href="servicios.html" class="btn botoncards">Más información</a>
+          <h1 class="card-title"> <i class="fas fa-street-view"></i> Desde donde sea</h5>
+            <p class="card-text">A traves de la aplicación de EcoElect podrás controlar las luces desde cualquier lugar.
+            </p>
+            <a href="servicios.html" class="btn botoncards">Más información</a>
         </div>
       </div>
       <div class="row cardfondoimg">
         <div class="col-lg-8 columna">
           <h1 class="card-title">No sólo usaras bluetooth para la música <i class="fas fa-music"></i></h5>
-          <p class="card-text">A traves de la aplicación de EcoElect podrás controlar las luces de tu casa desde cualquier dispositivo
-           bluetooth.</p>
-          <a href="servicios.html" class="btn botoncards">Más información</a>
+            <p class="card-text">A traves de la aplicación de EcoElect podrás controlar las luces de tu casa desde
+              cualquier dispositivo
+              bluetooth.</p>
+            <a href="servicios.html" class="btn botoncards">Más información</a>
         </div>
         <div class="col-lg-4 img">
           <i class="fab fa-bluetooth-b" style="font-size: 250px; color: white;"></i>
         </div>
       </div>
-      <div class="row cardsolido">
+      <div class="row cardsolido" style="background: #2a2a2a;">
         <div class="col-lg-4 img">
           <img src="img/arduino.svg" height="300" alt="">
         </div>
         <div class="col-lg-8 columna">
           <h1 class="card-title">Amamos el open source <i class="fas fa-heart"></i> </h5>
-          <p class="card-text">El modulo de control esta programado en arduino para mayor flexibilidad y comodidad.</p>
-          <a href="servicios.html" class="btn botoncards">Más información</a>
+            <p class="card-text">El modulo de control esta programado en arduino para mayor flexibilidad y comodidad.
+            </p>
+            <a href="servicios.html" class="btn botoncards">Más información</a>
         </div>
       </div>
     </div>
   </div>
 
-  
-    <div style="width: 100%; height: 56vh; padding: 0; margin-bottom: -7px; filter: grayscale(100%) contrast(82%) invert(100%);" id="mapa">
-      <iframe style="width: 100%; height: 56vh;"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1700.0073659267673!2d-68.51384944199663!3d-31.551210309632758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96816aa352172c35%3A0x72c9c4fa8d3b7944!2sPatricias%20Sanjuaninas%20Sur%201418%2C%20San%20Juan!5e0!3m2!1ses-419!2sar!4v1572906576239!5m2!1ses-419!2sar"
-        width="100%" height="430px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </div>
 
+  <div class="section">
+    <iframe style="width: 100%; height: 56vh; padding: 0; margin-bottom: -7px; filter: grayscale(100%) contrast(82%) invert(100%);"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1700.0073659267673!2d-68.51384944199663!3d-31.551210309632758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96816aa352172c35%3A0x72c9c4fa8d3b7944!2sPatricias%20Sanjuaninas%20Sur%201418%2C%20San%20Juan!5e0!3m2!1ses-419!2sar!4v1572906576239!5m2!1ses-419!2sar"
+      width="100%" height="430px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    
+      <style>
+        .place-card .place-card-large{
+          margin-top: 40px !important;
+        }
+      </style>
 
-    <footer class="footer">
-      <div class="container text-center text-md-left">
-        <div class="row">
-          <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-            <h5 class="font-weight-bold text-uppercase mb-4">EcoElect</h5>
-            <p>Automatización de circuitos de iluminación para cualquier lugar(empresas o casas) además de esto un
-              asesoramiento para conseguir una mayor eficiencia eléctrica .Logrando de esta manera un ahorro considerable
-              de energía eléctrica y también la seguridad del personal en una empresa.
-            </p>
-          </div>
-          <hr class="clearfix w-100 d-md-none">
-          <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-            <h5 class="font-weight-bold text-uppercase mb-4">Sobre</h5>
-            <ul class="list-unstyled">
-              <li>
-                <p>
-                  <a style="color: white" href="#!">Proyectos</a>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <a style="color: white" href="#!">Sobre Nosotros</a>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <a style="color: white" href="#!">BLOG</a>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <hr class="clearfix w-100 d-md-none">
-          <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-            <h5 class="font-weight-bold text-uppercase mb-4">Dirección</h5>
-            <ul class="list-unstyled">
-              <li>
-                <p>
-                  <i class="fas fa-home mr-3"></i> San Juan, Argentina</p>
-              </li>
-              <li>
-                <p>
-                  <i class="fas fa-envelope mr-3"></i> ecoelect@gmail.com</p>
-              </li>
-              <li>
-                <p>
-                  <i class="fas fa-phone mr-3"></i> + 54 9 2644363269</p>
-              </li>
-            </ul>
-          </div>
-          <hr class="clearfix w-100 d-md-none">
-          <div class="col-md-1 col-lg-1 text-center mx-auto my-4" style="display: inline-table;">
-            <h5 class="font-weight-bold text-uppercase mb-4" style="margin: 3px">Follow Us</h5>
-            <span style="display: flex; align-items: stretch;" s>
-              <a class="fb-ic" style="margin-left: 60px; margin-right: -25px; ">
-                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white"> </i>
-              </a>
-              <a class="tw-ic" style="margin-right: -25px; ">
-                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white"> </i>
-              </a>
-              <a class="gplus-ic" style="margin-right: -25px; ">
-                <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white"> </i>
-              </a>
-              <a class="li-ic" style="margin-right: -25px; ">
-                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white"> </i>
-              </a>
-              <a class="ins-ic">
-                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white"> </i>
-              </a>
-            </span>
-          </div>
+  <footer class="footer">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+          <h5 class="font-weight-bold text-uppercase mb-4">EcoElect</h5>
+          <p>Automatización de circuitos de iluminación para cualquier lugar(empresas o casas) además de esto un
+            asesoramiento para conseguir una mayor eficiencia eléctrica .Logrando de esta manera un ahorro considerable
+            de energía eléctrica y también la seguridad del personal en una empresa.
+          </p>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+          <h5 class="font-weight-bold text-uppercase mb-4">Sobre</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <a style="color: white" href="#!">Proyectos</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a style="color: white" href="#!">Sobre Nosotros</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a style="color: white" href="#!">BLOG</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+          <h5 class="font-weight-bold text-uppercase mb-4">Dirección</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fas fa-home mr-3"></i> San Juan, Argentina</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> ecoelect@gmail.com</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-phone mr-3"></i> + 54 9 2644363269</p>
+            </li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-1 col-lg-1 text-center mx-auto my-4" style="display: inline-table;">
+          <h5 class="font-weight-bold text-uppercase mb-4" style="margin: 3px">Follow Us</h5>
+          <span style="display: flex; align-items: stretch;" s>
+            <a class="fb-ic" style="margin-left: 60px; margin-right: -25px; ">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white"> </i>
+            </a>
+            <a class="tw-ic" style="margin-right: -25px; ">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white"> </i>
+            </a>
+            <a class="gplus-ic" style="margin-right: -25px; ">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white"> </i>
+            </a>
+            <a class="li-ic" style="margin-right: -25px; ">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white"> </i>
+            </a>
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x" style="color: white"> </i>
+            </a>
+          </span>
         </div>
       </div>
-    </footer>
-
-
-
+    </div>
+  </footer>
+</div>
+  </div>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"></script>
   <script>
-
-
-$(document).ready(function() {
-    $(window).scroll(function() {
-       if($(this).scrollTop() > 100) { 
-           $('.navbar').addClass('scrolled');
-       } else {
-           $('.navbar').removeClass('scrolled');
-       }
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('.navbar').addClass('scrolled');
+        } else {
+          $('.navbar').removeClass('scrolled');
+        }
+      });
     });
-});
-
-
   </script>
-  
+  <script>
+    $(document).ready(function () {
+      $('#pagepiling').pagepiling({
+        anchors: ['inicio', 'cards', 'mapa', 'fourthPage', 'lastPage'],
+        menu: '#Menu',
+        direction: 'horizontal',
+        verticalCentered: true,
+        sectionsColor: [],
+        scrollingSpeed: 700,
+        easing: 'swing',
+        loopBottom: false,
+        loopTop: false,
+        css3: true,
+        navigation: {
+          'textColor': '#fff',
+          'bulletsColor': '#fff',
+          'position': 'left',
+          'tooltips': ['Inicio', 'Caracteristicas', 'Ubicacion', 'section4']
+        },
+        normalScrollElements: null,
+        normalScrollElementTouchThreshold: 5,
+        touchSensitivity: 5,
+        keyboardScrolling: true,
+        sectionSelector: '.section',
+        animateAnchor: false,
+
+        //events
+        onLeave: function (index, nextIndex, direction) {},
+        afterLoad: function (anchorLink, index) {},
+        afterRender: function () {},
+      });
+    });
+  </script>
 </body>
 
 </html>
