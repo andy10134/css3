@@ -32,8 +32,11 @@
     <div class="collapse navbar-collapse items" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto" id="Menu">
         <li data-menuanchor="inicio" class="nav-item active" ><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item" data-menuanchor="video">
+          <a class="nav-link" href="#video">Domótica</a>
+        </li>
         <li class="nav-item" data-menuanchor="cards">
-          <a class="nav-link" href="#cards">Cards</a>
+          <a class="nav-link" href="#cards">Caracteristicas</a>
         </li>
         <li class="nav-item" data-menuanchor="mapa">
           <a class="nav-link" href="#mapa">Ubicación</a>
@@ -57,6 +60,26 @@
       </div>
     </div>
   </div>
+
+  <div class="container-fluid section p-0" id="video">
+    <div class="row divvideo">
+      <div class="col-lg-6 video">
+        <div class='youtube_codegena' id='7GnwYpY4Tgc' data-params='?&theme=dark&autoplay=1&autohide=2&rel=0&start=28' src='https://9to5google.com/wp-content/uploads/sites/4/2018/09/youtube_logo_dark.jpg?quality=82&strip=all'style='width:100%; height:100%;'></div><script src='https://rawgit.com/shaneapen/Async-Youtube-Player/master/async_youtube_player.js'></script><div style='font-size: 0.8em'></div>
+      </div>
+      <div class="col-lg-6 explicacion">
+        <h1 class="titulocards">¿Qué es la domótica?</h1>
+        <p class="video-text">La domótica es el conjunto de tecnologías aplicadas al control y la automatización inteligente de la vivienda, que permite una gestión eficiente del uso de la energía, que aporta seguridad y confort, además de comunicación entre el usuario y el sistema.</p>
+        <p class="video-text">Las distintas aplicaciones de la domótica tienen como fin la mejora de la calidad de vida de los usuarios y se pueden agrupar en diferentes categorías:</p>
+        <ul>
+          <li class="video-text">Eficiencia energética: el control domótico de una vivienda permite monitorizar y optimizar el consumo energético global mediante una gestión eficiente.</li>
+          <li class="video-text">Confort: la posibilidad de controlar diferentes tareas del hogar de forma remota e incluso programarlas de forma automática mediante la central domótica hacen más cómoda la estancia.</li>
+          <li class="video-text">Seguridad: los sensores de los distintos objetos conectados al sistema domótico permiten la supervisión del hogar a distancia y la programación de respuestas ante posibles intromisiones en el sistema de seguridad.</li>
+          <li class="video-text">Accesibilidad: la domótica busca hacer posible que cualquier persona, independientemente de su grado de capacidad, pueda hacer uso de los elementos del hogar.</li>
+          <li class="video-text">Comunicación: es la base de todo sistema domótico, ya que permite la conexión entre el usuario y los diferentes dispositivos conectados y posibilita el control a distancia de la vivienda domótica.</li>
+        </ul> 
+      </div>
+    </div>
+</div>
 
   <div class="container-fluid section" style="height: 120vh; padding: 0px;">
     <div class="cards">
@@ -96,7 +119,6 @@
       </div>
     </div>
   </div>
-
 
   <div class="section">
     <iframe style="width: 100%; height: 56vh; padding: 0;   margin-top: -150px; margin-bottom: -7px; filter: grayscale(100%) contrast(82%) invert(100%);"
@@ -204,7 +226,7 @@
       });
 
       $('#pagepiling').pagepiling({
-        anchors: ['inicio', 'cards', 'mapa', 'fourthPage', 'lastPage'],
+        anchors: ['inicio', 'video', 'cards', 'mapa', 'lastPage'],
         menu: '#Menu',
         direction: 'vertical',
         verticalCentered: true,
@@ -218,7 +240,7 @@
           'textColor': '#fff',
           'bulletsColor': '#fff',
           'position': 'left',
-          'tooltips': ['Inicio', 'Caracteristicas', 'Ubicacion', 'section4']
+          'tooltips': ['Inicio', '¿Que es la domótica?', 'Caracteristicas', 'Ubicación']
         },
         normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
